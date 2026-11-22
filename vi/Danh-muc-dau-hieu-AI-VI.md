@@ -1,11 +1,12 @@
-# Danh mục dấu hiệu văn AI tiếng Việt — văn học thuật/kỹ thuật (v0.1)
+# Danh mục dấu hiệu văn AI tiếng Việt — văn học thuật/kỹ thuật (v0.2)
 
-> **Trạng thái:** bản nháp đầu tiên (v0.1), xây từ suy luận + tương đương tiếng Việt của
-> bộ 26 mẫu blader/humanizer và khung 6 lớp của Academic Humanizer, kèm các họ dấu hiệu
-> riêng của tiếng Việt (Hán-Việt xếp chồng, dịch máy). **Chưa qua corpus đối chứng thật**
-> (chưa có cặp văn AI ↔ văn người đã duyệt để kiểm định tần suất và tỉ lệ báo động giả).
-> Mọi mức độ dưới đây là *giả định ban đầu*, chờ Đạt rà soát ở cổng G1 của lộ trình và chờ
-> bench ở Giai đoạn 3 mới được coi là chốt.
+> **Trạng thái:** v0.2 — đã qua rà soát của Đạt ở **cổng G1 (chốt ngày 2026-11-22)** với 5 quyết
+> định ghi trong `Van-de-va-cong-phe-duyet_v1.1.md`. Xây từ suy luận + tương đương tiếng Việt
+> của bộ 26 mẫu blader/humanizer và khung 6 lớp của Academic Humanizer, kèm các họ dấu hiệu
+> riêng của tiếng Việt (Hán-Việt xếp chồng, dịch máy). **Vẫn chưa qua corpus đối chứng thật**
+> (chưa có cặp văn AI ↔ văn người đã duyệt để kiểm định tần suất và tỉ lệ báo động giả) —
+> các ngưỡng định lượng là mốc tạm đã được Đạt duyệt, sẽ hiệu chuẩn lại bằng số đo ở bench
+> Giai đoạn 3 (cổng G3) mới được coi là chốt cuối.
 >
 > **Phạm vi:** bài báo, báo cáo kỹ thuật, hồ sơ đề xuất/dự thầu tiếng Việt trong lĩnh vực
 > kỹ thuật (ví dụ trong file thuộc dầu khí, ăn mòn, vật liệu). Không áp cho văn phổ thông,
@@ -110,7 +111,10 @@ Nối chuỗi tính từ bằng gạch nối theo cú pháp tiếng Anh, xa lạ
 Một câu kéo dài qua nhiều mệnh đề phụ chằng chịt, người đọc phải đọc lại mới nắm được ý chính.
 - **SAI:** "Mẫu thép sau khi được lấy từ hiện trường nơi đường ống đã vận hành trong điều kiện áp suất cao và nhiệt độ cao với sự hiện diện đồng thời của CO₂ và H₂S trong thời gian dài được đưa về phòng thí nghiệm để phân tích thành phần hoá học và đánh giá mức độ ăn mòn bằng các phương pháp hiện đại."
 - **Sửa:** "Mẫu thép được lấy từ đoạn ống đã vận hành dài ngày ở áp suất và nhiệt độ cao, có đồng thời CO₂ và H₂S. Tại phòng thí nghiệm, mẫu được phân tích thành phần hoá học và đánh giá mức độ ăn mòn."
-- **Mức độ:** GỢI Ý; CHẮC CHẮN khi câu vượt ~60 từ hoặc có ≥ 4 mệnh đề phụ.
+- **Mức độ:** **CẢNH BÁO + gợi ý sửa** khi câu **dài hơn 40 từ** (ngưỡng Đạt chốt ở G1,
+  2026-11-22 — thay ngưỡng ~60 từ của v0.1): khi gắn cờ phải kèm gợi ý tách câu cụ thể,
+  không chỉ báo dài; CHẮC CHẮN khi có ≥ 4 mệnh đề phụ. Câu dài do liệt kê điều kiện thử
+  nghiệm/thông số (L3.9) chỉ cảnh báo, không tự tách.
 - **Không áp dụng:** câu liệt kê điều kiện thử nghiệm mà tách câu làm đứt liên hệ điều kiện–kết quả (xem L3.9).
 
 ### L1.2.7 Từ nối mở đầu câu liên tiếp
@@ -387,7 +391,7 @@ Trộn từ tiếng Anh phổ thông (approach, performance, innovative…) vào
 - **SAI:** "Approach của nghiên cứu mang tính innovative, tập trung đánh giá performance của vật liệu trong môi trường sour service."
 - **Sửa:** "Nghiên cứu tiếp cận theo hướng đánh giá tính năng vận hành của vật liệu trong môi trường chua (sour service)."
 - **Mức độ:** GỢI Ý.
-- **Không áp dụng:** thuật ngữ tiếng Anh đã quy ước quốc tế và được giới chuyên môn dùng nguyên dạng (pitting, SSC, sour service) — giữ nguyên và dùng nhất quán trong toàn văn bản; xem L3.3.
+- **Không áp dụng:** thuật ngữ tiếng Anh đã quy ước quốc tế và được giới chuyên môn dùng nguyên dạng (pitting, SSC, sour service) — giữ nguyên và dùng nhất quán trong toàn văn bản; xem L3.3. **Danh sách bảo vệ chốt cứng nằm ở file đi kèm `Danh-sach-trang-thuat-ngu_v1.0.md`** (quyết định 2.3-A, cổng G1): thuật ngữ có trong danh sách trắng thì không gắn cờ, ngoài danh sách mới xét L2.14.
 
 ---
 
@@ -408,7 +412,7 @@ Câu bị động khi tác nhân không quan trọng, hoặc khi văn bản là 
 - **Lỗi phải tránh:** ép mọi câu quy trình thành chủ động, làm sai thể loại văn bản và đôi khi sai trách nhiệm pháp lý của quy trình.
 
 ## L3.3 Thuật ngữ chuẩn ngành và thuật ngữ quy ước quốc tế
-Thuật ngữ đã chuẩn hoá trong ngành dầu khí/ăn mòn/vật liệu: *ăn mòn điểm (pitting), ăn mòn rãnh, nứt dưới ứng suất trong môi trường sunfua (SSC), ăn mòn "ngọt" do CO₂, ăn mòn "chua" do H₂S, vùng ảnh hưởng nhiệt (HAZ), bảo vệ ca-tốt*.
+Thuật ngữ đã chuẩn hoá trong ngành dầu khí/ăn mòn/vật liệu: *ăn mòn điểm (pitting), ăn mòn rãnh, nứt dưới ứng suất trong môi trường sunfua (SSC), ăn mòn "ngọt" do CO₂, ăn mòn "chua" do H₂S, vùng ảnh hưởng nhiệt (HAZ), bảo vệ ca-tốt*. **Danh sách trắng đầy đủ (ngành rộng + ngành hẹp) nằm ở file đi kèm `Danh-sach-trang-thuat-ngu_v1.0.md`** — khi biên tập, tra danh sách đó trước khi quyết định giữ/sửa một thuật ngữ tiếng Anh.
 - **Giữ nguyên:** dùng đúng dạng thuật ngữ đã chọn từ đầu văn bản, nhất quán đến cuối; không "diễn giải lại" bằng từ đồng nghĩa cho đỡ lặp.
 - **Lỗi phải tránh:** thay thuật ngữ bằng cách nói vòng (ví dụ đổi "ăn mòn điểm" thành "hiện tượng ăn mòn tạo lỗ nhỏ") khiến văn bản mất tính tra cứu và sai nghĩa chuyên môn.
 
@@ -454,7 +458,7 @@ Phát biểu tầm nhìn, mục tiêu dài hạn và cam kết phạm vi/thời 
 
 ---
 
-## Tổng kết v0.1
+## Tổng kết v0.2
 
 | Lớp | Nội dung | Số mục |
 |---|---|---|
@@ -469,6 +473,7 @@ Phát biểu tầm nhìn, mục tiêu dài hạn và cam kết phạm vi/thời 
 | **Tổng dấu hiệu** | | **49** |
 | **L3** | **Ngoại lệ phải bảo vệ (không sửa)** | **11** |
 
-*Việc cần làm tiếp (ngoài phạm vi v0.1): đối chứng danh mục này với corpus văn AI ↔
-văn người thật (Giai đoạn 1 của lộ trình), đo tỉ lệ báo động giả trên văn người sạch,
-và để Đạt chốt lại mức độ CHẮC CHẮN/GỢI Ý ở cổng G1.*
+*Việc cần làm tiếp (ngoài phạm vi v0.2): đối chứng danh mục này với corpus văn AI ↔
+văn người thật (phần còn lại của Giai đoạn 1), đo tỉ lệ báo động giả trên văn người sạch
+và hiệu chuẩn lại các ngưỡng định lượng ở bench Giai đoạn 3 (cổng G3). Mức độ
+CHẮC CHẮN/GỢI Ý đã được Đạt chốt ở cổng G1 ngày 2026-11-22.*

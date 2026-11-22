@@ -1,6 +1,6 @@
 ---
 name: academic-humanizer-vi
-version: 0.1.0
+version: 0.2.0
 description: |
   Biên tập văn học thuật và kỹ thuật tiếng Việt do AI hỗ trợ soạn (bài báo, luận văn, báo cáo
   kỹ thuật) và hồ sơ đề xuất / dự thầu: loại bỏ các dấu hiệu văn AI tiếng Việt, giữ nguyên mọi
@@ -12,14 +12,18 @@ license: MIT
 compatibility: claude-code codex
 ---
 
-# Academic Humanizer — bản tiếng Việt (SKILL-VI v0.1)
+# Academic Humanizer — bản tiếng Việt (SKILL-VI v0.2)
 
 > **Ghi công:** Skill này diễn sinh từ **academic-humanizer** của AIScientists-Dev
 > (https://github.com/AIScientists-Dev/academic-humanizer, giấy phép MIT), bộ khung đến lượt
 > nó kế thừa từ **humanizer** của blader (https://github.com/blader/humanizer, giấy phép MIT).
 > Khung quy trình và kỷ luật khẳng định ↔ bằng chứng được giữ từ bản gốc; toàn bộ danh mục
-> dấu hiệu được xây mới cho tiếng Việt. Bản v0.1 là **bản nháp chờ duyệt** (cổng G1 của lộ
-> trình), chưa qua kiểm định bằng corpus đối chứng.
+> dấu hiệu được xây mới cho tiếng Việt. Bản v0.2 đã **qua cổng G1** (Đạt chốt 5 quyết định
+> ngày 2026-11-22, ghi trong `Van-de-va-cong-phe-duyet_v1.1.md`): giữ tên skill
+> `academic-humanizer-vi`; L1.6.4 giữ mức GỢI Ý xét từng câu; **câu dài hơn 40 từ phải
+> CẢNH BÁO + kèm gợi ý tách câu**; thuật ngữ tra theo danh sách trắng đi kèm
+> `Danh-sach-trang-thuat-ngu_v1.0.md` trước khi áp L2.14. Chưa qua kiểm định bằng corpus
+> đối chứng (việc đó thuộc Giai đoạn 3, cổng G3).
 
 ## Khi nào dùng
 
@@ -42,7 +46,7 @@ tác giả nhất quán, mọi khẳng định đều neo vào bằng chứng c�
 mà humanizer phổ thông bỏ qua: **mọi khẳng định phải xứng với con số, bảng, hình hoặc trích
 dẫn của nó, và không động từ nào được mạnh hơn bằng chứng của nó.**
 
-Danh mục dấu hiệu đầy đủ nằm ở file đi kèm **`Danh-muc-dau-hieu-AI-VI.md`** (cùng thư
+Danh mục dấu hiệu đầy đủ nằm ở file đi kèm **`Danh-muc-dau-hieu-AI-VI.md`** (bản hiện hành v0.2) (cùng thư
 mục với file này): Lớp L1 — dấu hiệu phổ thông (mã L1.1–L1.6), Lớp L2 — dấu hiệu học thuật
 (mã L2.1–L2.14), Lớp L3 — ngoại lệ phải bảo vệ (mã L3.1–L3.11). Mọi trích dẫn dấu hiệu
 trong quy trình và báo cáo đều dùng mã của danh mục đó.
@@ -232,7 +236,7 @@ chí, hội đồng hoặc bên mời thầu nơi văn bản được nộp.
 
 ---
 
-*Ghi công và giấy phép: SKILL-VI v0.1 diễn sinh từ academic-humanizer (AIScientists-Dev,
+*Ghi công và giấy phép: SKILL-VI v0.2 diễn sinh từ academic-humanizer (AIScientists-Dev,
 MIT) và humanizer (blader, MIT). Phần diễn sinh này được phát hành theo giấy phép MIT,
 kèm giữ nguyên ghi công tác giả gốc theo điều kiện của giấy phép. Danh mục đi kèm:
-`Danh-muc-dau-hieu-AI-VI.md`.*
+`Danh-muc-dau-hieu-AI-VI.md` (v0.2) và `Danh-sach-trang-thuat-ngu_v1.0.md`.*
