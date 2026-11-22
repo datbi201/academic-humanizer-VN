@@ -9,6 +9,26 @@
 
 </div>
 
+## Fork note — Vietnamese adaptation / Bản tiếng Việt
+
+This fork keeps the original English skill **unchanged** (root `SKILL.md`, v0.3.3,
+byte-identical to upstream) and adds a Vietnamese adaptation in the [`vi/`](vi/) folder:
+
+- [`vi/SKILL.md`](vi/SKILL.md) — skill `academic-humanizer-vi` v0.1: editing rules for
+  Vietnamese academic and technical writing (papers, theses, technical reports) and
+  tender / project proposals, derived from the framework of the original skill.
+- [`vi/Danh-muc-dau-hieu-AI-VI.md`](vi/Danh-muc-dau-hieu-AI-VI.md) — catalogue of
+  Vietnamese AI-writing tells (49 patterns: general, academic, translationese) plus
+  protected exceptions that must not be "fixed" (legitimate hedging, normative passive
+  voice, standardised terminology, decimal commas).
+
+To use the Vietnamese skill, install the `vi/` folder as a skill (its `SKILL.md` plus the
+catalogue file side by side). To use the English skill, install the repository root
+exactly as described in the upstream documentation below. Status: v0.1 draft, under
+review; the catalogue has not yet been validated against a human-written corpus.
+
+---
+
 ## Why we built this
 
 Some of us write a lot of papers and grant proposals, and our team started using AI to help with
