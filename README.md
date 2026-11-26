@@ -14,18 +14,37 @@
 This fork keeps the original English skill **unchanged** (root `SKILL.md`, v0.3.3,
 byte-identical to upstream) and adds a Vietnamese adaptation in the [`vi/`](vi/) folder:
 
-- [`vi/SKILL.md`](vi/SKILL.md) — skill `academic-humanizer-vi` v0.1: editing rules for
+- [`vi/SKILL.md`](vi/SKILL.md) — skill `academic-humanizer-vi` **v0.3**: editing rules for
   Vietnamese academic and technical writing (papers, theses, technical reports) and
   tender / project proposals, derived from the framework of the original skill.
 - [`vi/Danh-muc-dau-hieu-AI-VI.md`](vi/Danh-muc-dau-hieu-AI-VI.md) — catalogue of
   Vietnamese AI-writing tells (49 patterns: general, academic, translationese) plus
   protected exceptions that must not be "fixed" (legitimate hedging, normative passive
   voice, standardised terminology, decimal commas).
+- Two term whitelists (technical fields; Chemistry–Medicine–Biology) and two variant
+  files (by document type; by field — Chemistry / Medicine / Biology) live in `vi/`
+  alongside the skill; since v0.3 the skill treats all of them as mandatory reading.
 
-To use the Vietnamese skill, install the `vi/` folder as a skill (its `SKILL.md` plus the
-catalogue file side by side). To use the English skill, install the repository root
-exactly as described in the upstream documentation below. Status: v0.1 draft, under
-review; the catalogue has not yet been validated against a human-written corpus.
+Status: Vietnamese catalogue and rules reviewed and approved through the project's
+decision gates (G1 passed); corpus benchmarking (G3) is still to come.
+
+## Install this fork (EN + VI skills)
+
+With the skills CLI (requires Node.js). Type the repo name exactly, **including the
+`-VN` suffix**:
+
+```bash
+# Vietnamese skill — Claude Code
+npx skills add datbi201/academic-humanizer-VN --skill academic-humanizer-vi -a claude-code -g -y
+# Vietnamese skill — OpenAI Codex
+npx skills add datbi201/academic-humanizer-VN --skill academic-humanizer-vi -a codex -g -y
+# Vietnamese skill — Google Antigravity
+npx skills add datbi201/academic-humanizer-VN --skill academic-humanizer-vi -a antigravity -g -y
+# English skill: same commands with --skill academic-humanizer
+```
+
+Update later with `npx skills update`, then start a new agent session. Manual
+(ZIP) installation and a full Vietnamese guide: [HUONG-DAN-CAI-DAT.md](HUONG-DAN-CAI-DAT.md).
 
 ---
 
